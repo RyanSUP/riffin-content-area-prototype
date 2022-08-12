@@ -13,8 +13,11 @@ const DummyCard = (props) => {
     }
     return (
         <div style={componentStyle}>
-            <p>{props.tabData.owner}</p>
-            <p>{props.tabData.content}</p>
+            <p>Owner: {props.tabData.owner}</p>
+            <p>Content: {props.tabData.content}</p>
+            {props.tabData.owner === props.loggedInProfile.name &&
+                <p>This card belongs to the current user!</p>
+            }
             <button onClick={navToProfile}>View profile</button>
         </div>
     );

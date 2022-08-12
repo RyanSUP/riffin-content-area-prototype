@@ -21,9 +21,13 @@ const ProfileContent = (props) => {
 
     return (
         <>
-            {tablatures.map( 
-                (tablature, i) => (<DummyCard tabData={tablature} key={i} />)
-            )}
+            {tablatures.map( (tablature, i) => (
+                <DummyCard 
+                    loggedInProfile={props.loggedInProfile}
+                    tabData={tablature}
+                    key={i} 
+                />
+            ))}
         </>
     );
 }

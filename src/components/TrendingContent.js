@@ -2,13 +2,17 @@ import { useState } from 'react';
 import DummyCard from './DummyCard';
 import * as tablatureServices from '../services/dummyAPI'
 
-const TrendingContent = () => {
+const TrendingContent = (props) => {
     const [tablatures, setTablatures] = useState(tablatureServices.getTrendingTablature())
     return (
         <>
-            {tablatures.map( 
-                (tablature, i) => ( <DummyCard tabData={tablature} key={i} />)
-            )}
+            {tablatures.map( (tablature, i) => ( 
+                <DummyCard 
+                    loggedInProfile={props.loggedInProfile}
+                    tabData={tablature}
+                    key={i} 
+                />
+            ))}
         </>
     );
 }
