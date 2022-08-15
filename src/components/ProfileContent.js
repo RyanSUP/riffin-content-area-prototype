@@ -4,7 +4,7 @@ import * as tablatureServices from '../services/dummyAPI'
 import { useParams } from 'react-router-dom';
 
 const ProfileContent = (props) => {
-    const [tablatures, setTablatures] = useState(tablatureServices.getTrendingTablature())
+    const [tablatures, setTablatures] = useState(null)
     const { profileName } = useParams() // Since the route is setup as /:profileName, we can extract the profileName url parameter with this hook.
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const ProfileContent = (props) => {
 
     return (
         <>
-            {tablatures.map( (tablature, i) => (
+            {tablatures?.map( (tablature, i) => (
                 <DummyCard 
                     loggedInProfile={props.loggedInProfile}
                     tabData={tablature}

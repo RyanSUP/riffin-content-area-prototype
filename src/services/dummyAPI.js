@@ -6,8 +6,11 @@ const getTrendingTablature = () => tablatureData.filter( (tablature) => tablatur
 
 const getProfilesPublicTablature = (profileName) => tablatureData.filter( (tablature) => tablature.owner === profileName && tablature.public) 
 
+const getTabById = (id) => tablatureData.find((tablature) => tablature.id === id)
+
 export {
     getTrendingTablature,
     getCurrentProfilesTablature,
-    getProfilesPublicTablature
+    getProfilesPublicTablature,
+    getTabById,
 }

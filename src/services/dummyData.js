@@ -2,51 +2,61 @@ export const tablatureData = [
     {
         owner: "Steve",
         public: true,
-        content: "Public Steve"
+        content: "Public Steve",
+        id: 1
     },
     {
         owner: "Steve",
         public: false,
-        content: "Private Steve"
+        content: "Private Steve",
+        id: 2
     },
     {
         owner: "Tim",
         public: true,
-        content: "Public Tim"
+        content: "Public Tim",
+        id: 3
     },
     {
         owner: "Tim",
         public: false,
-        content: "Private Tim"
+        content: "Private Tim",
+        id: 4
     },
     {
         owner: "Dave",
         public: true,
-        content: "Public Dave"
+        content: "Public Dave",
+        id: 5
     },
     {
         owner: "Dave",
         public: false,
-        content: "Private Dave"
+        content: "Private Dave",
+        id: 6
     },
     {
         owner: "Ryan",
         public: true,
-        content: "Public Ryan"
+        content: "Public Ryan",
+        id: 7
     },
     {
         owner: "Ryan",
         public: false,
-        content: "Private Ryan"
+        content: "Private Ryan",
+        id: 8
     },
     {
         owner: "RonaldMcDonald",
         public: true,
-        content: "Public Ronald McDonald"
+        content: "Public Ronald McDonald",
+        id: 9
     },
     {
         owner: "RonaldMcDonald",
         public: false,
-        content: "Private Ronald McDonald"
+        content: "Private Ronald McDonald",
+        id: 10
     },
 ]
